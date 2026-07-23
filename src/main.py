@@ -205,6 +205,9 @@ def __output_results(tables: Tables) -> None:
   if len(tables.repos_missing_git_hooks.rows) > 0:
     console.print(tables.repos_missing_git_hooks)
     print()
+  if len(tables.repos_with_unpushed_commits.rows) > 0:
+    console.print(tables.repos_with_unpushed_commits)
+    print()
   if len(tables.repos_missing_commits.rows) > 0:
     console.print(tables.repos_missing_commits)
     print()
@@ -213,9 +216,6 @@ def __output_results(tables: Tables) -> None:
     print()
   if len(tables.repos_with_unpulled_commits.rows) > 0:
     console.print(tables.repos_with_unpulled_commits)
-    print()
-  if len(tables.repos_with_unpushed_commits.rows) > 0:
-    console.print(tables.repos_with_unpushed_commits)
     print()
   if len(tables.repos_missing_upstream.rows) > 0:
     console.print(tables.repos_missing_upstream)

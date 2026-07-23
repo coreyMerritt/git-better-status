@@ -28,29 +28,29 @@ class Tables:
       title="Happy Repos",
       color="#22C55E"
     )
-    self.repos_missing_commits = _build_table(
-      title="Repos missing Commits",
-      color="#FFD700"
-    )
     self.repos_missing_git_hooks = _build_table(
       title="Repos missing Git Hooks",
       color="#00FFEA"
     )
-    self.repos_missing_upstream = _build_table(
-      title="Repos missing an Upstream",
-      color="#FFA500"
-    )
-    self.repos_with_unpulled_commits = _build_table(
-      title="Repos that are Behind",
-      color="#FFA500"
-    )
     self.repos_with_unpushed_commits = _build_table(
       title="Repos with Unpushed Commits",
+      color="#FFD700"
+    )
+    self.repos_missing_commits = _build_table(
+      title="Repos missing Commits",
       color="#FFA500"
     )
     self.repos_with_untracked_files = _build_table(
       title="Repos with Untracked Files",
-      color="#FFD700"
+      color="#FFA500"
+    )
+    self.repos_with_unpulled_commits = _build_table(
+      title="Repos that are behind Upstream",
+      color="#FFA500"
+    )
+    self.repos_missing_upstream = _build_table(
+      title="Repos missing an Upstream",
+      color="#DC143C"
     )
     self.not_repos = Table(
       title="Not a Repo",
