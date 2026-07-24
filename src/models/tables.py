@@ -1,5 +1,6 @@
 from rich.table import Table
 
+
 def _build_table(title: str, color: str) -> Table:
   table = Table(
     title=title,
@@ -70,4 +71,3 @@ class Tables:
       self.repos_with_untracked_files,
       self.not_repos
     ]
-

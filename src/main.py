@@ -16,9 +16,10 @@ from rich.table import Table
 from rich.text import Text
 
 from models.archived_map import ARCHIVED_MAP
-from models.project_type_map import PROJECT_TYPE_MAP
 from models.private_color_map import PRIVATE_COLOR_MAP
+from models.project_type_map import PROJECT_TYPE_MAP
 from models.tables import Tables
+
 
 def main(path: Path, github_token: Token) -> None:
   github_session = Github(auth=github_token)
@@ -234,4 +235,3 @@ if __name__ == "__main__":
     path=Path(args.projects_path),
     github_token=Token(os.environ["GITHUB_PAT"])
   )
-
