@@ -31,6 +31,10 @@ PROJECT_TYPE_MAP = {
     "text": "Library",
     "color": "#FFFFFF"
   },
+  "non-technical": {
+    "text": "Non-Technical",
+    "color": "#FFFFFF"
+  },
   "platform": {
     "text": "Platform",
     "color": "#FFFFFF"
